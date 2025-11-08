@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carol Chopde - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <h1 class="logo" onclick="scrollToTop()">Carol Chopde</h1>
+            <div class="nav-menu">
+                <button class="nav-link active" onclick="scrollToSection('about')" data-section="about">About</button>
+                <button class="nav-link" onclick="scrollToSection('education')" data-section="education">Education</button>
+                <button class="nav-link" onclick="scrollToSection('projects')" data-section="projects">Projects</button>
+                <button class="nav-link" onclick="scrollToSection('achievements')" data-section="achievements">Achievements</button>
+                <button class="nav-link" onclick="scrollToSection('contact')" data-section="contact">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/About Section -->
+    <section id="about" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-image">
+                    <img src="images/profilefoto.jpg" alt="Carol Chopde Profile" class="profile-photo">
+                </div>
+                
+                <div class="hero-content">
+                    <h2 class="hero-title">Carol Sachin Chopde</h2>
+                    <p class="hero-subtitle">Aspiring AI Engineer | Developer | Musician</p>
+                    <p class="hero-description">
+                        I am a Computer Engineering student at Veermata Jijabai Technological Institute (VJTI), Mumbai, pursuing a Minor in Innovation and Entrepreneurship. I'm passionate about Artificial Intelligence, Machine Learning, and building impactful technology solutions that combine creativity and computation.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/carol-chopde" target="_blank" class="social-btn" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://github.com/CarolChopde" target="_blank" class="social-btn" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="mailto:carolsachin@gmail.com" class="social-btn" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="tel:+919137136797" class="social-btn" aria-label="Phone">
+                            <i data-lucide="phone"></i>
+                        </a>
+                    </div>
+
+                    <button onclick="scrollToSection('contact')" class="cta-btn">Get In Touch</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-white">
+        <div class="container-small">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">My academic journey and achievements</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-card active">
+                        <div class="card-content">
+                            <div class="card-icon bg-cyan">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <h3>Veermata Jijabai Technological Institute (VJTI), Mumbai</h3>
+                                    <div class="date">
+                                        <i data-lucide="calendar"></i>
+                                        <span>2023 - Present</span>
+                                    </div>
+                                </div>
+                                <p class="degree">B.Tech in Computer Engineering</p>
+                                <p class="minor">Minor in Innovation and Entrepreneurship</p>
+                                <span class="badge badge-active">Currently Pursuing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-content">
+                            <div class="card-icon bg-purple">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <h3>Birla Public School, Qatar</h3>
+                                    <div class="date">
+                                        <i data-lucide="calendar"></i>
+                                        <span>2023</span>
+                                    </div>
+                                </div>
+                                <p class="degree purple">Class XII</p>
+                                <p class="minor">Score: <strong>93.6%</strong></p>
+                                <span class="badge badge-completed">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-content">
+                            <div class="card-icon bg-purple">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <h3>Birla Public School, Qatar</h3>
+                                    <div class="date">
+                                        <i data-lucide="calendar"></i>
+                                        <span>2021</span>
+                                    </div>
+                                </div>
+                                <p class="degree purple">Class X</p>
+                                <p class="minor">Score: <strong>86%</strong></p>
+                                <span class="badge badge-completed">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Building innovative solutions with code and creativity</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <button class="project-link">
+                            <i data-lucide="external-link"></i>
+                        </button>
+                    </div>
+                    <h3 class="project-title">CrypTick</h3>
+                    <p class="project-description">
+                        Developed a full-stack cryptocurrency pump and dump detection system using machine learning and blockchain oracles under VJTI's Community of Coders.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">NumPy</span>
+                    </div>
+                    <img src="images/crypTick.jpg" alt="CrypTick Project" class="project-image">
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <button class="project-link">
+                            <i data-lucide="external-link"></i>
+                        </button>
+                    </div>
+                    <h3 class="project-title">Student Registration Portal</h3>
+                    <p class="project-description">
+                        Created a hackathon project during VJTI's Hackcelerate Hackathon to simplify student registration processes with an intuitive interface.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <img src="images/registration-portal.jpg" alt="Student Registration Portal" class="project-image">
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <button class="project-link">
+                            <i data-lucide="external-link"></i>
+                        </button>
+                    </div>
+                    <h3 class="project-title">CANA - Conversational Audio-to-Text Neural Assistant</h3>
+                    <p class="project-description">
+                        A deployable, emotionally intelligent voice assistant capable of understanding noisy, accented, and multilingual inputs to generate emotionally attuned responses.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Audio Processing</span>
+                    </div>
+                    <img src="images/cana.jpg" alt="CANA Project" class="project-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & Certifications</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Recognition and accomplishments in music and technology</p>
+            </div>
+
+            <h3 class="subsection-title">Achievements</h3>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-header">
+                        <div class="achievement-icon gold">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div>
+                            <h4>1st Place - KJSIM KJ Somaiya Band Event</h4>
+                            <div class="date">
+                                <i data-lucide="calendar"></i>
+                                <span>February 17, 2024</span>
+                            </div>
+                            <span class="badge badge-competition">Competition</span>
+                        </div>
+                    </div>
+                    <div class="photo-grid">
+                        <img src="images/KJ1.jpg" alt="KJSIM Event Photo" class="photo-image">
+                        <img src="images/kjcerti.jpg" alt="KJSIM Certificate" class="photo-image">
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-header">
+                        <div class="achievement-icon silver">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div>
+                            <h4>2nd Place - KJ Somaiya</h4>
+                            <div class="date">
+                                <i data-lucide="calendar"></i>
+                                <span>February 14, 2025</span>
+                            </div>
+                            <span class="badge badge-competition">Competition</span>
+                        </div>
+                    </div>
+                    <div class="photo-grid">
+                        <img src="images/vtjiband.jpg" alt="KJ Somaiya Event" class="photo-image">
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-header">
+                        <div class="achievement-icon gold">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div>
+                            <h4>1st Place - VJTI's Pratibimb Band Event</h4>
+                            <div class="date">
+                                <i data-lucide="calendar"></i>
+                                <span>December 16, 2024</span>
+                            </div>
+                            <span class="badge badge-competition">Competition</span>
+                        </div>
+                    </div>
+                    <div class="photo-grid">
+                        <img src="images/vjtiband2.jpg" alt="Pratibimb Event" class="photo-image">
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-header">
+                        <div class="achievement-icon purple">
+                            <i data-lucide="music"></i>
+                        </div>
+                        <div>
+                            <h4>Performance - JIO Plaza Enterprenaari Diwali Event</h4>
+                            <div class="date">
+                                <i data-lucide="calendar"></i>
+                                <span>October 25, 2024</span>
+                            </div>
+                            <span class="badge badge-competition">Performance</span>
+                        </div>
+                    </div>
+                    <img src="images/jio.jpg" alt="JIO Plaza Event" class="photo-image single">
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Certifications</h3>
+            <div class="certification-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon blue">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <div>
+                        <h4>IDEMI - Digital Marketing with AI</h4>
+                        <p>June 2024, Mumbai</p>
+                    </div>
+                </div>
+                <img src="images/idemicertificate.jpg" alt="IDEMI Certificate" class="photo-image single">
+            </div>
+        </div>
+    </section>
+
+    <!-- Social & Community Section -->
+    <section class="section bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Social & Community</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Contributing to campus life and community initiatives</p>
+            </div>
+            
+            <div class="social-grid">
+                <div class="social-card">
+                    <div class="social-header">
+                        <div class="social-icon">
+                            <i data-lucide="music"></i>
+                        </div>
+                        <div>
+                            <h3>Bassist in Obsidian</h3>
+                            <p>Official band of VJTI, performing at various campus and external events, bringing music to the community.</p>
+                        </div>
+                    </div>
+                    <div class="photo-grid-3">
+                        <img src="images/obsidian.jpg" alt="Obsidian Band 1" class="photo-image">
+                        <img src="images/dd.jpg" alt="Obsidian Band 2" class="photo-image">
+                    </div>
+                </div>
+
+                <div class="social-card">
+                    <div class="social-header">
+                        <div class="social-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div>
+                            <h3>Design Executive - DLA Society</h3>
+                            <p>Contributing to Debate and Literary Arts Society, performing and designing for various cultural events.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-card full">
+                    <div class="social-header">
+                        <div class="social-icon">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <div>
+                            <h3>Environmental Initiatives</h3>
+                            <p>Active participant in campus and environmental clean-up drives, contributing to a sustainable future.</p>
+                        </div>
+                    </div>
+                    <div class="photo-grid-3">
+                        <img src="images/cleanup1.jpg" alt="Cleanup Drive 1" class="photo-image">
+                        <img src="images/cleanup2.jpg" alt="Cleanup Drive 2" class="photo-image">
+                        <img src="images/swachh.jpg" alt="Cleanup Drive 3" class="photo-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-white">
+        <div class="container-medium">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Have a question or want to work together? Feel free to reach out!</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div>
+                            <p class="info-label">Email</p>
+                            <a href="mailto:carolsachin@gmail.com">carolsachin@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div>
+                            <p class="info-label">Phone</p>
+                            <a href="tel:+919137136797">+91 91371 36797</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i data-lucide="linkedin"></i>
+                        </div>
+                        <div>
+                            <p class="info-label">LinkedIn</p>
+                            <a href="https://linkedin.com/in/carol-chopde" target="_blank">carol-chopde</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i data-lucide="github"></i>
+                        </div>
+                        <div>
+                            <p class="info-label">GitHub</p>
+                            <a href="https://github.com/CarolChopde" target="_blank">CarolChopde</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+
+    <style>
+        .photo-image, .project-image {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+
+        .photo-grid, .photo-grid-3 {
+            display: grid;
+            gap: 10px;
+        }
+
+        .photo-grid {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .photo-grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        }
+
+        .photo-image.single {
+            margin-top: 10px;
+        }
+    </style>
+</body>
+</html>
